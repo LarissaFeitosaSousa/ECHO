@@ -4,15 +4,15 @@
                 <meta charset="UTF-8">
                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
                 <title>Gráfico de Satisfação</title>
-                <link rel="stylesheet" href="grafico.css">
-                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+                <link rel="stylesheet" href="grafico.css"> 
+                <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
-         <header class="navbar">
+  <header class="navbar">
     <div class="logo">
       <img src="/ECHO/imagem/ECHO LOGO PRETA.png" alt="Logo ECHO">
     </div>
-    
+  
     <nav>
       <ul>
         <li><a href="#">Início</a></li>
@@ -20,47 +20,17 @@
         <li><a href="#">Avaliações</a></li>
       </ul>
     </nav>
-    <div class="icon">
-        <i class="fa-solid fa-user"></i>
-      </div>
   </header>
        <main class="container">
     <h2>Gráficos de Satisfação</h2>
 
-    <input type="checkbox" id="toggleGraph">
-    <label for="toggleGraph" class="toggle-btn">⇆ Alterar gráfico</label>
-
-  <div class="chart chart-line">
-    <div class="line-chart">
-      <div class="point elogios" style="left:10%; bottom:20%;"></div>
-        <div class="point elogios" style="left:30%; bottom:40%;"></div>
-        <div class="point elogios" style="left:50%; bottom:25%;"></div>
-        <div class="point elogios" style="left:70%; bottom:50%;"></div>
-
-        <div class="point decepcoes" style="left:10%; bottom:10%;"></div>
-        <div class="point decepcoes" style="left:30%; bottom:30%;"></div>
-        <div class="point decepcoes" style="left:50%; bottom:45%;"></div>
-        <div class="point decepcoes" style="left:70%; bottom:35%;"></div>
-
-        <div class="point sugestoes" style="left:10%; bottom:30%;"></div>
-        <div class="point sugestoes" style="left:30%; bottom:50%;"></div>
-        <div class="point sugestoes" style="left:50%; bottom:40%;"></div>
-        <div class="point sugestoes" style="left:70%; bottom:60%;"></div>
-      </div>
+    <div id="grafico-container">
+      <canvas id="meuGrafico"></canvas>
     </div>
-    <div class="legend">
-      <span class="legend-item elogios"><span>Elogios</span></span>
-      <span class="legend-item decepcoes"><span>Decepções</span></span>
-      <span class="legend-item sugestoes"><span>Sugestões</span></span>
-    </div>
-  </div>
-  <div class="chart chart-pizza">
-     <div class="pie-chart"></div>
-     <div class="legend"></div>
-      <span class="legend-item elogios"><span>Elogios</span></span>
-      <span class="legend-item decepcoes"><span>Decepções</span></span>
-      <span class="legend-item sugestoes"><span>Sugestões</span></span>
-  </div>
+
+    <button id="toggleGraph">⇆ Alterar gráfico</button>
+
+    <script src="script.js"></script>
   </main>
   <footer class="footer">
     <p>© 2024 ECHO | <a href="#">Termos de Uso</a></p>
