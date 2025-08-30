@@ -62,12 +62,10 @@ body {
   color: #333;
 }
 #grafico-container {
-  position: relative;
-  width: 750px;
-  aspect-ratio: 1.3/1;
+  width: 100%;
   height: 500px;
   padding: 2px;
-  margin: 4px auto;
+  margin: 4px;
 }
 #toggleGraph {
   display: inline-block;
@@ -86,7 +84,7 @@ body {
 #meuGrafico {
   max-width: 700px;
   margin: 20px auto;
-  display: none;
+  display: block;
 }
 .footer {
   background: #111;
