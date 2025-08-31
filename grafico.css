@@ -5,7 +5,7 @@
   font-family: "Poppins", sans-serif;
 }
 body {
-  background: linear-gradient(to bottom, #ffffff, #c0bfbf);
+  background: #f9f9f9;
   color: #222;
   display: flex;
   flex-direction: column;
@@ -30,27 +30,6 @@ body {
   display: flex;
   align-items: center;
 }
-.navbar ul {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  width: 100%;
-  padding: 0;
-  margin: 0;
-}
-.navbar ul li a {
-  text-decoration: none;
-  color: #333;
-  font-weight: 500;
-  margin: 0 10px;
-  align-items: center;
-  transition: 0.3s;
-}
-.navbar ul li a:hover {
-  color: #4B4DED;
-  text-decoration: underline;
-}
 .container {
   flex: 1;
   padding: 40px 20px;
@@ -63,7 +42,7 @@ body {
 }
 #grafico-container {
   width: 100%;
-  height: 500px;
+  height: 400px;
   padding: 2px;
   margin: 4px;
 }
@@ -71,18 +50,19 @@ body {
   display: inline-block;
   margin: 15px auto;
   padding: 10px 20px;
-  background: #4B4DED;
+  background: #7c3aed;
   color: rgb(255, 255, 255);
   border-radius: 20px;
   cursor: pointer;
+  font-size: 1rem;
   transition: background 0.3s;
 }
 #toggleGraph:hover {
-  background: #3737d1;
-  color: #000000;
+  background: #833bff;
+  color: #3a214e;
 }
 #meuGrafico {
-  max-width: 700px;
+  width: 90%;
   margin: 20px auto;
   display: block;
 }
